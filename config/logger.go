@@ -43,7 +43,7 @@ func getLoggerLevel(value string) log.Level {
 		return log.DebugLevel
 	case "TRACE":
 		return log.TraceLevel
-		// 기본값은 InfoLevel
 	}
+	// 기본값은 InfoLevel
 	return log.InfoLevel
 }
