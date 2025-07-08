@@ -1,3 +1,7 @@
+// go:build wireinject
+//go:build wireinject
+// +build wireinject
+
 // wire 조건 빌드 태그, wire가 코드 생성 시에만 사용, 실행시 사용 x
 
 package config

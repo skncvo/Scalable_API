@@ -13,7 +13,7 @@ import (
 	"github.com/skncvo/Scalable_API/app/service"
 )
 
-// Injectors from wire.go:
+// Injectors from injector.go:
 
 func Init() *Initialization {
 	gormDB := ConnectToDB()
@@ -25,7 +25,7 @@ func Init() *Initialization {
 	return initialization
 }
 
-// wire.go:
+// injector.go:
 
 // wire.NewSet : 구성 요소의 그래프를 정의
 var db = wire.NewSet(ConnectToDB)
